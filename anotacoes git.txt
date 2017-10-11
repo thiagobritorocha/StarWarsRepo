@@ -1,18 +1,19 @@
 Comandos git
+ssh-keygen - gera chave ssh
 git init - indica uma pasta como um repositorio;
 git remote add origin <caminho do servidor> exem:(https://github.com/thiagobritorocha/teste) - vincula o seu working diretory a um repositorio remoto;
-git add * ou git add .. - indica que os todos os arquivos est„o prontos pra commit ao adicion·-las nos Index;
-git add nome_da_pasta/ - todos os arquivos em uma determinada subpasta do repositÛrio;
+git add * ou git add .. - indica que os todos os arquivos est√£o prontos pra commit ao adicion√°-las nos Index;
+git add nome_da_pasta/ - todos os arquivos em uma determinada subpasta do reposit√≥rio;
 git add *.txt - todos os arquivos txt;
-git commit - envia as alteraÁıes para o Head, mas ainda n„o para o repositorio remoto;
-git commit -am 'Mensagem de commit' - j· cria um novo HEAD com todas as alteraÁıes detectadas no repositÛrio
+git commit - envia as altera√ß√µes para o Head, mas ainda n√£o para o repositorio remoto;
+git commit -am 'Mensagem de commit' - j√° cria um novo HEAD com todas as altera√ß√µes detectadas no reposit√≥rio
 git push --set-upstream origin master - Indica o repositorio como master;
-git push - envia finalmente as alterÁıes para o repositorio remoto;
+git push - envia finalmente as alter√ß√µes para o repositorio remoto;
 git pull https://github.com/thiagobritorocha/ProvaJava master -- Pega todos os arquivos do repositorio indicado;
-git checkout --<arquivo alterado>        -- Para descartar as mudanÁas feitas no arquivo;
-git checkout .                           -- Para descartar as mudanÁas feitas em todos os arquivos;
-git checkout HEAD  -- <arquivo alterado> -- Para descartar as mudanÁas feitas no arquivo com Stage(git add);
-git reste HEAD~1 --soft(Padr„o) ou --hard                         -- Volta a vers„o para um commit anterior;
+git checkout --<arquivo alterado>        -- Para descartar as mudan√ßas feitas no arquivo;
+git checkout .                           -- Para descartar as mudan√ßas feitas em todos os arquivos;
+git checkout HEAD  -- <arquivo alterado> -- Para descartar as mudan√ßas feitas no arquivo com Stage(git add);
+git reste HEAD~1 --soft(Padr√£o) ou --hard                         -- Volta a vers√£o para um commit anterior;
 git branch <nova branch>                 -- Para criar uma branch
 git branch -d <branch>                   -- Para deletar uma branch
 git merge novaBranch  
@@ -79,7 +80,7 @@ git push -u origin development
 ###########################################TRANFERINDO HISTORICO DA VDI PARA MAQUINA LOCAL##########################################
 
 VDI
-//cria uma pasta para guardas as alteraÁıes do repositorio remoto e:repos/transaction-cancel
+//cria uma pasta para guardas as altera√ß√µes do repositorio remoto e:repos/transaction-cancel
 git init --bare transaction-cancel.git
 
 //No diretorio onde ficam os arquivos remotos e:work/dev/cnv-cadastro/microservice-settlement/delivery/transaction-cancel 
@@ -90,7 +91,7 @@ git remote add local /C/repos/transaction-list.git
 git push local
 
 
-M¡QUINA LOCAL
+M√ÅQUINA LOCAL
 /c/work/dev/settlement innersource/transaction-cancel
 git status
 git checkout .
