@@ -3,3 +3,6 @@ Master Yoda
 Obi Wan Kenobi
 Leia Organa
 Jabba the Hutt
+Chewbacca
+Han Sol
+
