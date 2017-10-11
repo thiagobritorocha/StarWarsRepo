@@ -13,6 +13,9 @@ git checkout --<arquivo alterado>        -- Para descartar as mudanças feitas no
 git checkout .                           -- Para descartar as mudanças feitas em todos os arquivos;
 git checkout HEAD  -- <arquivo alterado> -- Para descartar as mudanças feitas no arquivo com Stage(git add);
 git reste HEAD~1 --soft(Padrão) ou --hard                         -- Volta a versão para um commit anterior;
+git branch <nova branch>                 -- Para criar uma branch
+git branch -d <branch>                   -- Para deletar uma branch
+git merge novaBranch  
 
 git remote set-url origin https://github.com/thiagobritorocha/ProvaJava
 
