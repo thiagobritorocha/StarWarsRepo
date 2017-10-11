@@ -12,7 +12,9 @@ git pull https://github.com/thiagobritorocha/ProvaJava master -- Pega todos os a
 git checkout --<arquivo alterado>        -- Para descartar as mudanças feitas no arquivo;
 git checkout .                           -- Para descartar as mudanças feitas em todos os arquivos;
 git checkout HEAD  -- <arquivo alterado> -- Para descartar as mudanças feitas no arquivo com Stage(git add);
-git reste HEAD~1 --soft(Padrão) ou --hard                         -- Volta a versão para um commit anterior;
+git reste HEAD~1 --soft(Padrão) ou --hard -- Volta a versão para um commit anterior;
+git branch <nova_branch>                 --cria uma nova branch
+git branch -d <branch>                   --exclui uma branch
 
 git remote set-url origin https://github.com/thiagobritorocha/ProvaJava
 
