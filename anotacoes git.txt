@@ -1,0 +1,103 @@
+Comandos git
+git init - indica uma pasta como um repositorio;
+git remote add origin <caminho do servidor> exem:(https://github.com/thiagobritorocha/teste) - vincula o seu working diretory a um repositorio remoto;
+git add * ou git add .. - indica que os todos os arquivos estão prontos pra commit ao adicioná-las nos Index;
+git add nome_da_pasta/ - todos os arquivos em uma determinada subpasta do repositório;
+git add *.txt - todos os arquivos txt;
+git commit - envia as alterações para o Head, mas ainda não para o repositorio remoto;
+git commit -am 'Mensagem de commit' - já cria um novo HEAD com todas as alterações detectadas no repositório
+git push --set-upstream origin master - Indica o repositorio como master;
+git push - envia finalmente as alterções para o repositorio remoto;
+git pull https://github.com/thiagobritorocha/ProvaJava master -- Pega todos os arquivos do repositorio indicado;
+git checkout --<arquivo alterado>        -- Para descartar as mudanças feitas no arquivo;
+git checkout .                           -- Para descartar as mudanças feitas em todos os arquivos;
+git checkout HEAD  -- <arquivo alterado> -- Para descartar as mudanças feitas no arquivo com Stage(git add);
+git reste HEAD~1 --soft(Padrão) ou --hard                         -- Volta a versão para um commit anterior;
+
+git remote set-url origin https://github.com/thiagobritorocha/ProvaJava
+
+git remote add origin https://github.com/thiagobritorocha/ProvaJava
+
+git push --set-upstream origin master https://github.com/thiagobritorocha/ProvaJava
+
+git push --set-upstream origin master https://github.com/thiagobritorocha/FJ91
+
+//Remover branchs que foram removidas remotamente, mas que ainda existem localmente.
+git remote prune origin --dry-run -- Exibir as branchs
+git remote prune origin
+
+ssh-keygen
+C:\Users\t.rocha\.ssh
+
+//Cielo
+SALVA USUARIO E SENHA POR 8 HORAS:
+git config --global credential.helper 'cache --timeout=28800'
+
+SALVA USUARIO E SENHA PERMANENTEMENTE
+git config --global credential.helper cache
+
+git config --global user.name "Thiago Rocha" 
+git config --global user.email t3101thg@prestadorcbmp.com.br 
+git config --global http.sslVerify "false"
+
+git clone https://corp-git.ccorp.local/cnv-cadastro/sync-archetype.git
+git add .
+git commit  -am 'Sprint 5 reup'
+git push -u origin delivery
+
+git push --set-upstream origin development
+
+git clone https://corp-git.ccorp.local/cnv-cadastro/sync-archetype.git
+
+E:/microservice
+
+git clone https://corp-git.ccorp.local/cnv-cadastro/config-server.git
+
+T3101THG
+C!elo_226
+
+api-customer-status  sync-archetype           sync-customer-data
+common-cicslink      sync-bank-address        sync-lock
+config-server        sync-cielo-id            sync-owner-data
+domain               sync-contact             sync-payment-group
+sync-address         sync-currency-converter  sync-payment-type
+
+git config --global user.name "Thiago Rocha" 
+git config --global user.email t3101thg@prestadorcbmp.com.br 
+git config --global http.sslVerify "false"
+
+git checkout -b development
+git add .
+git commit  -am 'Re up - 0905'
+git push -u origin development
+
+
+###########################################TRANFERINDO HISTORICO DA VDI PARA MAQUINA LOCAL##########################################
+
+VDI
+//cria uma pasta para guardas as alterações do repositorio remoto e:repos/transaction-cancel
+git init --bare transaction-cancel.git
+
+//No diretorio onde ficam os arquivos remotos e:work/dev/cnv-cadastro/microservice-settlement/delivery/transaction-cancel 
+git status
+git remote
+git remote add local /E/repos/transaction-cancel.git
+git remote add local /C/repos/transaction-list.git
+git push local
+
+
+MÁQUINA LOCAL
+/c/work/dev/settlement innersource/transaction-cancel
+git status
+git checkout .
+git checkout delivery
+git status
+git pull
+
+COPIO O ARQUIVO DA VDI PARA C:repos/transaction-cancel
+git remote add local /C/repos/transaction-cancel.git
+git remote add local /C/repos/transaction-list.git
+
+git pull local delivery
+
+
