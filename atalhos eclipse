@@ -1,0 +1,29 @@
+Renomear refatorando
+Alt + Shift + R
+
+Fechar janela de edição
+Ctrl + W
+
+Excluir linha de código
+Ctrl + D
+
+Abrir código em tela cheia
+Ctrl + M
+
+Mover linhas pelo código-fonte
+Alt + Seta Up/Down
+
+Corrigir código rapidamente
+Ctrl + 1
+
+Navegar entre arquivos abertos
+Alt + Seta Lefth/ Right
+
+Pesquisar e navegar em arquivos abertos
+Ctrl + E
+
+Acesso rápido
+Ctrl + 3
+ggas -> Generate getter and Setters
+ghcae  -> Generate hashCode and equals
+gcuf -> Generate Constructor using Fields
