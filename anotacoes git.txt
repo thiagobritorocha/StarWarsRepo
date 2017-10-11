@@ -16,6 +16,7 @@ git reste HEAD~1 --soft(Padrão) ou --hard                         -- Volta a ver
 git branch <nova branch>                 -- Para criar uma branch
 git branch -d <branch>                   -- Para deletar uma branch
 git merge novaBranch  
+git rebase novaBranch
 
 git remote set-url origin https://github.com/thiagobritorocha/ProvaJava
 
