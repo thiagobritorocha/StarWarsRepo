@@ -105,5 +105,6 @@ git remote add local /C/repos/transaction-cancel.git
 git remote add local /C/repos/transaction-list.git
 
 git pull local delivery
+git rm -r --cached .
 
 
